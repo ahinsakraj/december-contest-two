@@ -13,9 +13,9 @@
     <!-- Home page section -->
     <div id="homeContainer">
         <navbar id="navbar">
-            <div id="logo"><img id="grad" src="../assets/Hands Graduate.png" alt=""><img src="../assets/QuizGrad.png"
-                    alt="">
-            </div>
+            <a href="index.html" id="logo"><img id="grad" src="./assets/Hands Graduate.png" alt=""><img
+                    src="./assets/QuizGrad.png" alt="">
+            </a>
             <ul>
                 <li><a href="#">How it works?</a></li>
                 <li><a href="#">Features</a></li>
@@ -54,9 +54,10 @@
                 </svg></span>
             <h1>Choose your favorite topic</h1>
             <p>Select more than 5 topics to start quiz</p>
+            <!-- TagBadges of categories -->
             <div id="badge">
                 <div class="tag">
-                    <button>TagBadge</button>
+                    <button>General Knowledge</button>
                     <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
                             viewBox="0 0 12 13" fill="none">
                             <path
@@ -65,7 +66,7 @@
                         </svg></span>
                 </div>
                 <div class="tag">
-                    <button>TagBadge</button>
+                    <button>Science</button>
                     <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
                             viewBox="0 0 12 13" fill="none">
                             <path
@@ -74,7 +75,7 @@
                         </svg></span>
                 </div>
                 <div class="tag">
-                    <button>TagBadge</button>
+                    <button>History</button>
                     <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
                             viewBox="0 0 12 13" fill="none">
                             <path
@@ -83,7 +84,7 @@
                         </svg></span>
                 </div>
                 <div class="tag">
-                    <button>TagBadge</button>
+                    <button>Mathematics</button>
                     <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
                             viewBox="0 0 12 13" fill="none">
                             <path
@@ -92,7 +93,7 @@
                         </svg></span>
                 </div>
                 <div class="tag">
-                    <button>TagBadge</button>
+                    <button>Geography</button>
                     <span style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
                             viewBox="0 0 12 13" fill="none">
                             <path
@@ -194,6 +195,57 @@
             </div>
             <button>Start Quiz</button>
         </div>
+    </div>
+
+
+    <!-- Qustions section -->
+
+    <div style="display: none;" id="question_section">
+        <div class="question_text">
+            Who wrote 'To Kill a Mockingbird'?
+        </div>
+        <div class="question_options">
+            <div class="option">
+                <p>A.</p>
+                <h2 class="sub_option">Harper Lee</h2>
+            </div>
+            <div class="option">
+                <p>B.</p>
+                <h2 class="sub_option">George Orwell</h2>
+            </div>
+            <div class="option">
+                <p>C.</p>
+                <h2 class="sub_option">Jane Austen</h2>
+            </div>
+            <div class="option">
+                <p>D.</p>
+                <h2 class="sub_option">F. Scott Fitzgerald</h2>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prevBtn"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7"
+                    fill="none">
+                    <path d="M0.981087 3.50828L6.64164 0.240164L6.64164 6.7764L0.981087 3.50828Z" fill="#333333" />
+                </svg> Previous</button>
+            <div>
+                <button class="nextBtn">Next <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7"
+                        viewBox="0 0 6 7" fill="none">
+                        <path d="M5.9104 3.50807L0.24985 6.77619L0.249851 0.239954L5.9104 3.50807Z" fill="white" />
+                    </svg></button>
+                <button class="skipBtn">Skip <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8"
+                        viewBox="0 0 13 8" fill="none">
+                        <path d="M8.47961 3.79787L2.81906 7.06599L2.81906 0.529749L8.47961 3.79787Z" fill="#FCC822" />
+                        <path d="M12.5435 3.79787L6.88291 7.06599L6.88291 0.529749L12.5435 3.79787Z" fill="#FCC822" />
+                    </svg></button>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="display: none;" class="card">
+        <h1>Quiz is over</h1>
+        <h2>Your Score is : 5</h2>
+        <button>Okay</button>
     </div>
     <script src="script.js"></script>
 </body>
